@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <h1 class="heading-primary">Spli</h1>
+    <h1 class="heading-primary">Tter</h1>
+    <div class="calculator">
+      <div class="calculator__left">
+        <p class="calculator__bill">Bill</p>
+        <form action="" class="calculator__form calculator__form--bill">
+          <img
+            src="images/icon-dollar.svg"
+            alt="Dollar Sign"
+            class="calculator__dollar"
+          />
+          <input
+            type="text"
+            placeholder="0"
+            class="calculator__form--input calculator__cost"
+            onchange="Bill()"
+          />
+        </form>
+        <p class="calculator__select-tip">Select Tip %</p>
+        <div class="calculator__buttons">
+          <button class="calculator__tip">5%</button>
+          <button class="calculator__tip">10%</button>
+          <button class="calculator__tip">15%</button>
+          <button class="calculator__tip">25%</button>
+          <button class="calculator__tip">50%</button>
+          <input
+            type="text"
+            placeholder="Custom"
+            class="calculator__tip calculator__tip-custom"
+            onchange="Bill()"
+          />
+        </div>
+        <p class="calculator__people">Number of People</p>
+        <form action="" class="calculator__form calculator__form--people">
+          <img
+            src="images/icon-person.svg"
+            alt="Outline of a person"
+            class="calculator__dollar"
+          />
+          <input
+            type="text"
+            placeholder="0"
+            class="calculator__form--input calculator__number-people"
+            onchange="Bill()"
+          />
+        </form>
+      </div>
+
+      <div class="calculator__right">
+        <div class="wrapper__flex">
+          <div class="wrapper__flex--column">
+            <p class="calculator__calculation-title">Tip Amount</p>
+            <p class="calculator__per-person">/ person</p>
+          </div>
+          <p class="calculator__amount calculator__amount--tip">$0.00</p>
+        </div>
+
+        <div class="wrapper__flex">
+          <div class="wrapper__flex--column">
+            <p class="calculator__calculation-title">Total</p>
+            <p class="calculator__per-person">/ person</p>
+          </div>
+          <p class="calculator__amount calculator__amount--total">$0.00</p>
+        </div>
+
+        <button class="calculator__reset">Reset</button>
+      </div>
+    </div>
+  </body>
+</html>
